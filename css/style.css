@@ -14,50 +14,43 @@ body{
     background: radial-gradient(50% 50% at 50% 50%, rgba(26, 170, 216, 0.8) 0%, #000000 100%);
     width: 100%;
     color: white;
-    display: flex;
-    justify-content: center;
 }
 
 .background-picture{
-    height: 100vh;
-    max-width: 80%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(img/photo.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.header{
+    text-align: center;
 }
 
-.info__fio{
+.header__fio{
     font-size: 4vh;
 }
 
-.info__devider{
+.header__devider{
     width: 100%;
 }
 
-.info__study_place{
+.header__study-place{
     padding-top: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.main_info{
+.main{
     display: flex;
     padding-bottom: 4vw;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.skills{
+.main__skills{
     background-color: rgba(0, 0, 0, 0.58);
     width: 50%;
     margin: 1vw 9vw;
@@ -72,32 +65,29 @@ body{
     justify-content: center;
 }
 
-footer{
-    width: 100%;
+.footer{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.pictures{
+.footer__pictures{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cat_img{
-    width: 17vw;
-    height: 13vw;
-}
-
-.soc_net{
+.footer__pictures__soc-net{
     padding: 2vw 0vw;
     display: flex;
 }
 
-.soc_net img{
+.footer__pictures__soc-net img{
     margin: 0vw 4vw;
     width:10vw;
     height:10vw;
@@ -111,22 +101,23 @@ footer{
 
     .background-picture{
         justify-content: space-around;
+        height: 100vh; 
     }
 
-    header{
+    .header{
         margin-top: 6vh;
     }
 
-    .FIO{
+    .header__fio{
         font-size: 4vw;
     }
 
-    .skills_info{
+    .main{
         margin: 1vw 5vw;
         padding: 3vw 4vw;
     }
 
-    .cat_img{
+    .footer__pictures__cat-img{
         width: 20vw;
         height: 15vw;
         transform: scaleX(-1);
@@ -142,8 +133,20 @@ footer{
 }
 
 @media (max-height:  768px){
-    .skills_info{
+    .main__skills{
         margin: 1vw 2vw;
+    }
+    body{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .background-picture{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
     }
 }
 
@@ -153,20 +156,20 @@ footer{
         font-size: 2vw;
     }
 
-    .FIO{
+    .header__fio{
         font-size: 2vw; 
     }
 
-    .short_info{
+    .header__study-place{
         font-size: 2vw;
         padding:  5px;
     }
 
-    .skills_info{
+    .main_info{
         padding: 1vw;
     }
 
-    main{
+    .main{
         padding-bottom: 5px;
     }
 
